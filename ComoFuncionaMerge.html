@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Git Merge - Explicação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como funciona o <code>git merge</code></h1>
+    <p>
+        O comando <code>git merge</code> é usado para unir o histórico de dois branches diferentes.
+        Normalmente, você o utiliza para trazer as alterações de um branch secundário para o branch principal.
+    </p>
+
+    <h2>Passos básicos</h2>
+    <ul>
+        <li><code>git checkout main</code> – Primeiro, vá para o branch onde deseja aplicar as mudanças (ex: <code>main</code>).</li>
+        <li><code>git merge nome-do-branch</code> – Faz a fusão do branch especificado com o branch atual.</li>
+    </ul>
+
+    <h2>Tipos de Merge</h2>
+    <ul>
+        <li><strong>Fast-forward:</strong> acontece quando o branch atual pode simplesmente avançar para o commit do outro branch, sem criar um novo commit de merge.</li>
+        <li><strong>Merge commit:</strong> cria um novo commit especial que une os históricos dos dois branches.</li>
+    </ul>
+
+    <h2>Resolvendo Conflitos</h2>
+    <p>
+        Às vezes, o Git não consegue decidir automaticamente quais mudanças manter. Isso gera um <strong>conflito</strong>.
+        Nesse caso:
+    </p>
+    <ul>
+        <li>Edite os arquivos conflitantes e escolha quais alterações manter.</li>
+        <li>Depois, use <code>git add &lt;arquivo&gt;</code> para marcar como resolvido.</li>
+        <li>Finalize com <code>git commit</code> para concluir o merge.</li>
+    </ul>
+
+    <h2>Exemplo prático</h2>
+    <pre>
+# Estando no branch main
+git checkout main
+git merge feature-login
+    </pre>
+    <p>
+        Esse comando trará todas as alterações do branch <code>feature-login</code> para o <code>main</code>.
+    </p>
+</body>
+</html>
