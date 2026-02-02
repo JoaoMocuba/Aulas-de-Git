@@ -23,10 +23,7 @@ Este repositório funciona como um **diário de aprendizado**, onde cada commit 
 - **Git**
 - **GitHub**
 - **Markdown**
-- Linguagens de programação:
-  - ☕ Java
-  - 🐍 Python
-  - 💻 C
+
 
 ---
 
