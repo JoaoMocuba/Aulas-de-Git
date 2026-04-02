@@ -62,4 +62,4 @@ Este repositório é focado em **aprendizado**. Sugestões e melhorias são semp
 
 ---
 
-🚀 *Aprender Git é como salvar o jogo antes do boss fight.*
+
